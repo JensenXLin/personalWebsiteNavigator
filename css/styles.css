@@ -7,6 +7,21 @@
     color: black;
 }
 /* media search */
+@media screen and (max-width:320px){
+	html{
+		font-size:10px;
+		}
+}
+@media screen and (min-width:320px){
+	html{
+		font-size:12px;
+		}
+}
+@media screen and (min-width:640px){
+	html{
+		font-size:16px;
+	}
+}
 
 h1{
     /* font setting */
@@ -48,7 +63,9 @@ div.container {
     /* size */
     width: 50vw;
     height: 30vh;
-
+    min-width: 20rem;
+    max-width: 22.5rem;
+    max-height: 15rem;
     /* children display */
     grid-template-rows: 1fr 3fr;
 }
@@ -64,12 +81,18 @@ header{
 
 /* 下次修改成grid布局 写死 上2 下1 解决hover动的问题*/
 section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
+    place-items: center;
     text-align: center;
 
+}
+
+div.personalWeb{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
 }
 
 /* Interaction Design */
