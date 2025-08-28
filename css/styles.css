@@ -59,6 +59,7 @@ div.container {
     /* style */
     border-radius: 5%;
     background-color: rgba(255, 228, 196, 0.5);
+    box-shadow: 0px 0px .6rem black;
 
     /* size */
     width: 50vw;
@@ -99,7 +100,7 @@ div.personalWeb{
 /* Interaction Design */
 
 div.container:hover {
-    box-shadow: 0px 0px 1.25rem black;
+    box-shadow: 0px 0px 1.5rem black;
 
 }
 
